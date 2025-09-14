@@ -77,7 +77,7 @@ export default function Home() {
               alt="Abdirahman Hassan (Aman)"
               fill
               sizes="(min-width:768px) 256px, 224px"
-              className="object-cover"
+              className="object-cover object-[50%_20%]"
             />
           </div>
         </div>

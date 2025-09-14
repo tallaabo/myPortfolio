@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";               // ← add this
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -30,12 +31,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <header className="fixed inset-x-0 top-0 z-50 h-16 border-b border-white/10 bg-black/70 backdrop-blur shadow-md">
             <div className="mx-auto flex h-full max-w-6xl items-center justify-center px-6 text-white">
               <nav className="flex gap-8 text-lg font-semibold">
-                <a href="/" className="hover:underline">Home</a>
-                <a href="/about" className="hover:underline">About</a>
-                <a href="/projects" className="hover:underline">Projects</a>
-                <a href="/writing" className="hover:underline">Writing</a>
-                <a href="/resume" className="hover:underline">Resume</a>
-                <a href="/contact" className="hover:underline">Contact</a>
+                <Link href="/" className="hover:underline">Home</Link>
+                <Link href="/about" className="hover:underline">About</Link>
+                <Link href="/projects" className="hover:underline">Projects</Link>
+                <Link href="/writing" className="hover:underline">Writing</Link>
+                <Link href="/resume" className="hover:underline">Resume</Link>
+                <Link href="/contact" className="hover:underline">Contact</Link>
               </nav>
             </div>
           </header>
