@@ -11,7 +11,7 @@ export default function ContactPage() {
         </a>
       </p>
       <form
-        action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+        action="https://formspree.io/f/xzzaqzyn"
         method="POST"
         className="mt-6 grid gap-3"
       >
