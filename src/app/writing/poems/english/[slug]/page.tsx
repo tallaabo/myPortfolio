@@ -1,0 +1,11 @@
+import { getDoc } from "@/lib/content";
+
+export default async function PoemEnglishDetail({ params }: { params: { slug: string } }) {
+  const { content, meta } = await getDoc(["writing", "poems", "english"], params.slug);
+  return (
+    <main className="prose prose-invert mx-auto max-w-3xl p-6">
+      <h1>{meta.title}</h1>
+      {content}
+    </main>
+  );
+}

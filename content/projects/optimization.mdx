@@ -1,0 +1,37 @@
+---
+title: "Optimization-Project"
+date: "2025-09-13"
+summary: "A C-based benchmarking project for exploring matrix traversal performance with control vs optimized implementations."
+tags:
+  - C
+  - Performance
+  - Matrix
+  - Benchmarking
+  - Optimization
+github: "https://github.com/tallaabo/Optimization-Project"
+---
+<br></br>
+
+## Overview
+
+**Optimization-Project** is a C benchmarking framework built to measure and compare different approaches to matrix traversal and aggregation.
+It evaluates **control (baseline)** implementations against **student (optimized)** ones for tasks like collecting every 5th element and summing all values.
+The project highlights cache-friendly programming patterns, loop optimizations, and timing analysis.
+<br></br>
+
+## Features
+
+- 🎯 Control vs. optimized implementations for fairness testing  
+- 🧪 Deterministic matrix initialization with fixed random seed  
+- ⏱️ CPU & wall-clock timing via `clock_gettime`  
+- ⚖️ Even- and odd-sized matrix dimensions to test alignment effects  
+- 📊 Speed ratio reporting to quantify performance gains  
+- 🧹 Memory cleanup with `free_matrix` to avoid leaks  
+<br></br>
+
+## Tech Stack
+
+- **C (C11)** for implementation  
+- **POSIX clock API** (`CLOCK_REALTIME`, `CLOCK_PROCESS_CPUTIME_ID`)  
+- Custom **matrix module** (`matrix.h/.c`) for setup and teardown  
+- **GCC** (recommended) with `-O3` and architecture flags for benchmarking

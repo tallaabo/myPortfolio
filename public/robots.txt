@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Note to crawlers and users
+# Content is © Abdirahman Hassan (Aman). Do not reproduce, distribute, or reuse without consent.

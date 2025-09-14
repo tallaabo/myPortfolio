@@ -1,0 +1,29 @@
+---
+title: "SampleTrack"
+date: "2025-09-13"
+summary: "A streamlined system for scanning, logging, and tracking samples in testing workflows."
+tags: ["Python", "SQLAlchemy", "Automation", "Database", "Tkinter"]
+github: "https://github.com/tallaabo/SampleTrack"
+---
+<br></br>
+
+## Overview
+**SampleTrack** is a Python-based application designed to make laboratory and testing workflows more reliable.  
+It integrates badge scans and cover sheet scans into a central database, ensuring every sample movement—pickup, drop-off, or test—is logged in real time.  
+The goal is to provide a clear audit trail that simplifies debugging, compliance, and reporting.
+<br></br>
+
+## Features
+- 🔑 Badge-based user identification (dropper/picker tracking)  
+- 📄 Automatic cover sheet parsing for GID, Test #, Sequence, and Primary Requester  
+- 🗄️ Centralized SQL Server storage with deduplication rules  
+- ⏱️ Auto-cleanup of logs older than 365 days  
+- 🖥️ Simple GUI with scan-to-save workflow (built with Tkinter)  
+<br></br>
+
+## Tech Stack
+- **Python** for the core application logic  
+- **Tkinter** for the GUI  
+- **SQLAlchemy + pyodbc** for database access (SQL Server)  
+- **Automation** scripts for cleanup and consistency  
+
